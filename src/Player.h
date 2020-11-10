@@ -4,9 +4,10 @@
 class Player{
 	private:
 		std::string name;
-		//Pokemon p;
+		Pokemon p;
 	public:
+		Player();
 		Player(std::string Name);
 		std::string getName();
-		//std::string getPokemon();
+		std::string getPokemon();
 };
