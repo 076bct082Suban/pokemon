@@ -1,13 +1,14 @@
 #include "Pokemon.h"
 
-Pokemon::Pokemon(){
-	name = "";
-}
-
-Pokemon::Pokemon(std::string Name){
+Pokemon::Pokemon(std::string Name, int Type){
 	name = Name;
+	type = Type;
 }
 
 std::string Pokemon::getName(){
 	return name;
+}
+
+int Pokemon::getType(){
+	return type;
 }

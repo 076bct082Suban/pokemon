@@ -1,11 +1,12 @@
 #pragma once
 #include "includes.h"
+#include "Obj.h"
 
-class Pokemon{
+class Pokemon: public Obj{
 	private:
-		std::string name;
+		int type;
 	public:
-		Pokemon();
-		Pokemon(std::string Name);
+		Pokemon(std::string Name, int Type);
 		std::string getName();
+		int getType();
 };
