@@ -6,7 +6,7 @@ class Pokemon: public Obj{
 	private:
 		int type;
 	public:
+		Pokemon();
 		Pokemon(std::string Name, int Type);
-		std::string getName();
 		int getType();
 };
